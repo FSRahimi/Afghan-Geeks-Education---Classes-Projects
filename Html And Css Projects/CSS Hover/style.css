@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  padding: 40px;
+  background: #f4f6f9;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* ================= BUTTON HOVER ================= */
+
+.btn {
+  background: greenyellow;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.btn:hover {
+  background: darkblue;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid royalblue;
+  background: transparent;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  background: royalblue;
+  color: white;
+  box-shadow: 0 5px 15px rgb(0, 0, 0.2);
+}
+
+/* ================= LINK HOVER ================= */
+a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* ================= IMAGE HOVER ================= */
+.img-hover {
+  width: 300px;
+  transition: 0.4s;
+}
+.img-hover:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+/* ================= CARD HOVER ================= */
+.card-container {
+  width: 250px;
+  padding: 20px;
+  background: blanchedalmond;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgb(0, 0, 0.3);
+}
+/* ================= GALLERY HOVER ================= */
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: warp;
+}
+.gallery-item {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+}
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+.gallery-item:hover img {
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0.6);
+  color: antiquewhite;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: 0.4;
+}
+.gallery-item:hover .overlay {
+  transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+}

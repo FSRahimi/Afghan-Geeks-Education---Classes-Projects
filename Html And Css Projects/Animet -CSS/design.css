@@ -1,0 +1,134 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: bisque;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.navbar {
+  color: white;
+  padding: 10px;
+}
+.navbar a {
+  color: blue;
+  margin-right: 15px;
+}
+
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 20px;
+}
+.block {
+  display: block;
+  background: green;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.inline {
+  display: inline;
+  background: yellow;
+  padding: 10px;
+}
+.none {
+  margin-right: 15px;
+  display: none;
+}
+.contents {
+  display: contents;
+}
+
+.table {
+  display: table;
+  border: 2px dashed greenyellow;
+  margin-top: 10px;
+}
+
+.row {
+  display: table-row;
+}
+.cell {
+  display: table-cell;
+  border: 2px dashed black;
+  padding: 10px;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 40px;
+  background: fuchsia;
+}
+.parent {
+  position: relative;
+  height: 120px;
+  background: wheat;
+}
+
+.absolute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: orangered;
+}
+.fixed-box {
+  position: fixed;
+  bottom: 10px;
+  right: 100px;
+  background: black;
+  color: white;
+}
+
+.sticky-box {
+  position: sticky;
+  top: 0;
+  background: plum;
+  padding: 20px;
+}
+.z-container {
+  position: relative;
+  height: 150px;
+}
+.z-box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.red {
+  background: red;
+  z-index: 1;
+}
+.blue {
+  background: blue;
+  z-index: 2;
+  top: 30px;
+  left: 40px;
+}
+
+.green {
+  background: green;
+  z-index: 3;
+  top: 50px;
+  left: 60px;
+}
+.inset-parent {
+  position: relative;
+  inset: 20px;
+  background: brown;
+  color: white;
+}
+.box inset-box {
+  position: absolute;
+  inset: 20px;
+  background: brown;
+}

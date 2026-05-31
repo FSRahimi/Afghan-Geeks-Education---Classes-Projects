@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Position و Display</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Position & Display</h1>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#"> </a>
+      <a href="#"> </a>
+      <a href="#"> </a>
+    </nav>
+
+    <main>
+      <!-- DISPLAY -->
+      <section>
+        <h2>display: block</h2>
+        <div class="block">Block Element</div>
+
+        <h2>display: inline</h2>
+        <span class="inline">Inline 1</span>
+        <span class="inline">Inline 2</span>
+
+        <h2>display: none</h2>
+        <div class="none">Hide the element / h2</div>
+
+        <h2>display: contents</h2>
+        <div class="contents">
+          <p>Child 1</p>
+          <p>Child 2</p>
+        </div>
+
+        <h2>display: table</h2>
+        <div class="table">
+          <div class="row">
+            <div class="cell">Cell 1</div>
+            <div class="cell">Cell 2</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATIC -->
+      <section>
+        <h2>position: static</h2>
+        <div class="box static">Static</div>
+      </section>
+
+      <!-- RELATIVE -->
+      <section>
+        <h2>position: relative</h2>
+        <div class="box relative">Relative</div>
+      </section>
+
+      <!-- ABSOLUTE -->
+      <section>
+        <h2>position: absolute</h2>
+        <div class="parent">
+          Parent (relative)
+          <div class="box absolute">Absolute</div>
+        </div>
+      </section>
+
+      <!-- FIXED -->
+      <section>
+        <h2>position: fixed</h2>
+        <div class="fixed-box">Fixed</div>
+      </section>
+
+      <!-- STICKY -->
+      <section>
+        <h2>position: sticky</h2>
+        <div class="sticky-box">Sticky</div>
+        <p>Scrolling the page that see position</p>
+      </section>
+
+      <!-- Z-INDEX -->
+      <section>
+        <h2>z-index</h2>
+        <div class="z-container">
+          <div class="z-box red">z-index:1</div>
+          <div class="z-box blue">z-index:2</div>
+          <div class="z-box green">z-index:3</div>
+        </div>
+      </section>
+
+      <!-- INSET -->
+      <section>
+        <h2>inset</h2>
+        <div class="inset-parent">
+          <div class="box inset-box">Inset</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>CSS Project</p>
+    </footer>
+  </body>
+</html>

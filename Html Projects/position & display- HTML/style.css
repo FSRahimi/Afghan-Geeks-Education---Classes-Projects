@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* -------- NAV -------- */
+
+nav {
+  background: #222;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* -------- HEADER -------- */
+
+header {
+  background: #f2f2f2;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* -------- COURSES SECTION (DISPLAY) -------- */
+
+.courses {
+}
+
+/* block */
+
+/* inline */
+.highlight {
+}
+
+/* inline-block */
+.btn {
+}
+
+/* footer */
+footer {
+}
+
+/* -------- POSITION PAGE -------- */
+
+.about-header {
+}
+
+/* relative */
+.image-box {
+}
+
+/* absolute */
+.badge {
+}
+
+/* sticky */
+.about-content p {
+}
+
+/* fixed */
+.contact-fixed {
+}

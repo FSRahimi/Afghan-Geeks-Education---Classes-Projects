@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting App</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #b2caf0, #7f77a0);
+      }
+
+      /* Card shadow */
+      .card {
+        background: white;
+        width: 360px;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2);
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .icon {
+        text-align: center;
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      /* input shadow */
+      input,
+      select {
+        width: 100%;
+        padding: 12px;
+        margin-top: 6px;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        font-size: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+      }
+
+      input:focus,
+      select:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(95, 156, 255, 0.2);
+        border-color: #5f9cff;
+      }
+
+      /* button shadow */
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        border: none;
+        background: linear-gradient(to right, #5f9cff, #7b5cff);
+        color: white;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      #greeting {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <h2 class="title">Greeting App</h2>
+
+      <label>Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" />
+
+      <label>Select Time</label>
+      <select id="time">
+        <option value="">Choose time</option>
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="evening">Evening</option>
+        <option value="night">Night</option>
+      </select>
+
+      <button id="btn">Show Greeting</button>
+
+      <div id="greeting"></div>
+    </div>
+
+    <script>
+      let btn = document.getElementById("btn");
+      let nameInput = document.getElementById("name");
+
+      btn.addEventListener("click", showGreeting);
+
+      nameInput.addEventListener("keyup", function (e) {
+        if (e.key === "Enter") {
+          showGreeting();
+        }
+      });
+
+      function showGreeting() {
+        let name = document.getElementById("name").value.trim();
+        let time = document.getElementById("time").value;
+
+        let message = "";
+        let emoji = "";
+
+        if (name === "" || time === "") {
+          document.getElementById("greeting").innerHTML =
+            "⚠️ Please fill all fields";
+          return;
+        }
+
+        if (time === "morning") {
+          message = "Good Morning";
+          emoji = "🌞";
+        } else if (time === "afternoon") {
+          message = "Good Afternoon";
+          emoji = "🌤️";
+        } else if (time === "evening") {
+          message = "Good Evening";
+          emoji = "🌆";
+        } else {
+          message = "Good Night";
+          emoji = "🌙";
+        }
+
+        document.getElementById("greeting").innerHTML =
+          `${emoji} ${message}, ${name}!`;
+      }
+    </script>
+  </body>
+</html>

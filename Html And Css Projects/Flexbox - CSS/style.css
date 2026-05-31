@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* MAIN LAYOUT */
+.main-layout {
+  display: flex;
+  min-height: 200px;
+}
+.sidebar {
+  flex: 1;
+  background: #eee;
+  padding: 20px;
+}
+.content {
+  flex: 3;
+  padding: 20px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+  gap: 20px;
+  padding: 30px;
+  height: 500px;
+  background: #ddd;
+}
+
+.card {
+  background: teal;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+/* Different behaviors */
+.card1 {
+  flex: 1 1 120px;
+  order: 4;
+}
+.card2 {
+  flex-grow: 2;
+  flex-basis: 150px;
+}
+.card3 {
+  flex: 1;
+  align-self: flex-start;
+}
+.card4 {
+  flex-shrink: 0;
+  flex-basis: 200px;
+}
+.card5 {
+  flex: 1 1 100px;
+}
+.card6 {
+  flex: 2 1 150px;
+}
+.card7 {
+  flex: 1;
+  align-self: flex-end;
+}
+.card8 {
+  flex: 1 1 130px;
+}
+
+/* TEAM */
+.team {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+  background: #fafaff;
+}
+.member {
+  width: 150px;
+  height: 150px;
+  background: #f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+/* PRICING */
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+.price-card {
+  flex: 1 1 200px;
+  padding: 40px;
+  background: #b5d5;
+  text-align: center;
+}
+.popular {
+  align-self: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* FORM */
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background: #222;
+  color: white;
+}

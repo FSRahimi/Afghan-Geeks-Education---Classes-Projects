@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>StreamFlix</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- NAVBAR -->
+
+    <header class="bg-black border-b border-gray-800">
+      <div class="container mx-auto flex justify-between items-center p-6">
+        <h1 class="text-3xl font-bold text-red-600">StreamFlix</h1>
+
+        <nav class="space-x-8 text-gray-300">
+          <a href="#" class="hover:text-white transition">Home</a>
+          <a href="#" class="hover:text-white transition">Movies</a>
+          <a href="#" class="hover:text-white transition">Series</a>
+          <a href="#" class="hover:text-white transition">New</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="relative">
+      <img
+        src="https://picsum.photos/1600/600"
+        class="w-full h-[500px] object-cover opacity-60"
+      />
+
+      <div class="absolute inset-0 flex items-center">
+        <div class="container mx-auto">
+          <h2 class="text-5xl font-bold mb-6">
+            Unlimited Movies, TV Shows, and More
+          </h2>
+
+          <p class="text-lg mb-8 text-gray-300">
+            Watch anywhere. Cancel anytime.
+          </p>
+
+          <button
+            class="bg-red-600 px-8 py-3 rounded hover:bg-red-700 transition"
+          >
+            Watch Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRENDING MOVIES -->
+
+    <section class="py-16">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-8">Trending Now</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <img
+            src="https://picsum.photos/300/400?random=1"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=2"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=3"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=4"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR MOVIES -->
+
+    <section class="py-16 bg-gray-900">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-8">Popular Movies</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <img
+            src="https://picsum.photos/300/400?random=5"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=6"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=7"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=8"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP SERIES -->
+
+    <section class="py-16">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-8">Top Series</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <img
+            src="https://picsum.photos/300/400?random=9"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=10"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=11"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+
+          <img
+            src="https://picsum.photos/300/400?random=12"
+            class="rounded hover:scale-105 transition duration-300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE BANNER -->
+
+    <section class="relative py-24">
+      <img
+        src="https://picsum.photos/1600/500?random=13"
+        class="absolute inset-0 w-full h-full object-cover opacity-40"
+      />
+
+      <div class="relative container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">Watch Anywhere</h2>
+
+        <p class="text-lg text-gray-300 mb-8">
+          Stream movies and series on your phone, tablet, laptop, and TV.
+        </p>
+
+        <button
+          class="bg-red-600 px-8 py-3 rounded hover:bg-red-700 transition"
+        >
+          Start Watching
+        </button>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+
+    <section class="py-20 bg-gray-900">
+      <div class="container mx-auto text-center max-w-3xl">
+        <h2 class="text-3xl font-bold mb-8">What Our Users Say</h2>
+
+        <p class="italic text-gray-300">
+          “StreamFlix has the best movie collection. I watch movies every
+          night!”
+        </p>
+
+        <p class="mt-4">— Happy Viewer</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="py-20 text-center">
+      <h2 class="text-4xl font-bold mb-6">Ready to Watch?</h2>
+
+      <button class="bg-red-600 px-8 py-3 rounded hover:bg-red-700 transition">
+        Join Now
+      </button>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer
+      class="bg-black border-t border-gray-800 py-10 text-center text-gray-400"
+    >
+      <p>© 2026 StreamFlix</p>
+
+      <p class="mt-2">Movies • Series • Entertainment</p>
+    </footer>
+  </body>
+</html>

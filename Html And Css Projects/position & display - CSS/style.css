@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------- NAV -------- */
+nav {
+  background: #222;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  margin-right: 20px;
+}
+/* -------- HEADER -------- */
+
+header {
+  background: #f2f2f2;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+i {
+  margin-right: 5px;
+}
+
+/* -------- COURSES SECTION (DISPLAY) -------- */
+.courses {
+  padding: 30px;
+}
+
+/* block */
+
+.Course-card {
+  display: block;
+  background: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+/* inline */
+.highlight {
+  display: inline;
+  color: red;
+  font-weight: bold;
+}
+/* inline-block */
+.btn {
+  display: inline-block;
+  background: burlywood;
+  color: black;
+  padding: 10px 20px;
+  margin: 10px 10px 0 0;
+  text-decoration: none;
+}
+/* footer */
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------- POSITION PAGE -------- */
+.about-header {
+  background: #f2f2f2;
+  color: black;
+  padding: 30px;
+  text-align: center;
+}
+/* relative */
+.image-box {
+  position: relative;
+  width: 800px;
+  margin: 30px auto;
+}
+
+/* absolute */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: gold;
+  padding: 8px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* sticky */
+.about-content p {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 10px;
+}
+
+/* fixed */
+.contact-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  padding: 15px;
+}

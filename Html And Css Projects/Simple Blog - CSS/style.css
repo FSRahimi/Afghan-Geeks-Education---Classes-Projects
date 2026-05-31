@@ -1,0 +1,111 @@
+/* Box model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f7f7;
+  color: #1a1a1a;
+}
+
+/* Header */
+header {
+  background-color: #4dabf7;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #ffd93d;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+section img {
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+/* Article */
+article h2 {
+  color: #4dabf7;
+  margin-bottom: 15px;
+}
+
+article a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #6bc1ff;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #ffd93d;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social a:hover {
+  color: #ffd93d;
+}

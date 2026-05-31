@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8eaea; /* very soft pink */
+}
+
+header {
+  background-color: #c97b7b; /* main soft rose */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #ffffff; /* clean white */
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #e4b4b4;
+}
+
+nav a {
+  color: #c97b7b; /* match header */
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #8b4f4f; /* darker shade */
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.img {
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.gallery img {
+  width: 300px;
+}
+
+.video {
+  margin-top: 15px;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: auto;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #d6a5a5;
+  border-radius: 5px;
+}
+
+form input:focus {
+  outline: none;
+  border: 2px solid #c97b7b;
+}
+
+footer {
+  background-color: #c97b7b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
