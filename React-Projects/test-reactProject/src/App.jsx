@@ -12,7 +12,7 @@ function App() {
     { id: 1, name: "GitHub Pro", price: 10 },
     { id: 2, name: "AI Pro", price: 30 },
     { id: 3, name: "Vercel Pro", price: 10 },
-    { id: 1, name: "Figma Pro", price: 10 }
+    { id: 4, name: "Figma Pro", price: 10 }
   ];
 
   function addToCart(product) {
