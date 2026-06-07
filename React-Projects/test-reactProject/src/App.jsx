@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Cart from "./components/Cart";
 import ProductCard from "./components/ProductCart";
 import "./App.css";
-import "./index.css";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -16,10 +15,10 @@ function App() {
   ];
 
   function addToCart(product) {
-    setCart([...Cart, product]);
+    setCart([...cart, product]);
   }
   function removeFromCart(id) {
-    setCart(Cart.filter((item) => item.id !== id));
+    setCart(cart.filter((item) => item.id !== id));
   }
   return (
     <div>

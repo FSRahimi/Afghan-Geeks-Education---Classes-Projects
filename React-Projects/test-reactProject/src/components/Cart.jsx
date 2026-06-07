@@ -10,7 +10,7 @@ function Cart(){
 
                 <span> {item.name}</span>
                   <span> ${item.price}</span>
-                  <button onClick={() => onpointermove(item.id)}> Remove </button>
+                  <button onClick={() => onpointermove(item.id)} className="btn"> Remove </button>
 
                 </li>
               ))}
