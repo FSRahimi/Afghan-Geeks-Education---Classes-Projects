@@ -5,9 +5,9 @@ function ProductCard({ product, onAdd }) {
 
       <p className="price"> ${product.price}/Month</p>
 
-      <button onClick={() => onAdd(product)} className="btn ">
-        {" "}
-        Add To Subscription{" "}
+      <button onClick={() => onAdd(product)} className="btn">
+        
+        Add To Subscription
       </button>
     </div>
   );

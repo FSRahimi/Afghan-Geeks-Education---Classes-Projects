@@ -7,7 +7,7 @@ import "./App.css";
 
 function App() {
   const [cart, setCart] = useState([]);
-  const product = [
+  const products = [
     { id: 1, name: "GitHub Pro", price: 10 },
     { id: 2, name: "AI Pro", price: 30 },
     { id: 3, name: "Vercel Pro", price: 10 },
@@ -21,12 +21,11 @@ function App() {
     setCart(cart.filter((item) => item.id !== id));
   }
   return (
-    <div>
+    <div className="app">
       <Header cartCount={cart.length} />
-      <h2> MarketPlace</h2>
-
-      <div>
-        {product.map((product) => (
+      <h2 className="title"> MarketPlace</h2>
+      <div className="product-grid">
+        {products.map((product) => (
           <ProductCard key={product.id} product={product} onAdd={addToCart} />
         ))}
       </div>
