@@ -1,37 +1,56 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("   ")
+    fetch(
+      "https://fakestoreapi.com/products?limit=8"
+    )
       .then((res) => res.json())
-      .then((date) => setProducts(date));
+      .then((data) => setProducts(data));
   }, []);
 
   return (
     <>
-      <h1> Products</h1>
-      <div>
-        {products.map((product) => {
-          <div key={product.id}>
-            <img src={product.image} alt={product.title} />
+      <h1 style={{ marginBottom: "20px" }}>
+        Products
+      </h1>
 
-            <div>
-              <h3> {product.title.slice(0, 30)}</h3>
+      <div className="products-grid">
+        {products.map((product) => (
+          <div
+            className="card"
+            key={product.id}
+          >
+            <img
+              src={product.image}
+              alt={product.title}
+            />
 
-              <span> ${product.price}</span>
+            <div className="card-content">
+              <h3>
+                {product.title.slice(0, 30)}
+              </h3>
 
-              <Link to={`/products/${product.id}`}>
-                <button className="btn"> View Details</button>
+              <span className="price">
+                ${product.price}
+              </span>
+
+              <Link
+                to={`/products/${product.id}`}
+              >
+                <button className="btn">
+                  View Details
+                </button>
               </Link>
             </div>
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
     </>
   );
 }
 
-export default Products
+export default Products;
